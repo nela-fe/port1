@@ -1,4 +1,4 @@
-/* general */
+/* GENERAL */
 
 * {
 	padding: 0;
@@ -18,17 +18,14 @@ video {
 	height: auto;
 }
 
-
 body {
-	background: #ffffff 
+	background: #ffffff;
+	display: flex;
 	}
 
-
-/* TODO: get rid of whitespace on top */
 .page-container {
 	width: 100%;
 	max-width: 1600px;
-	height: 100%;
 	margin: 0 auto;
 	background-image: url(../img/tischherz_hell_50_80.jpg);
 	background-attachment: fixed;
@@ -38,10 +35,11 @@ body {
 
 
 
-/* fonts */
+/* FONTS */
 
 a  {
-	color: #666;
+	color: #399;
+	font-weight: bold;
 	}
 
 p,
@@ -99,7 +97,7 @@ p {
 
 
 
-/* header */
+/* HEADER */
 
 
 .head-container {
@@ -135,7 +133,7 @@ p {
 	#logo img {
 	height: 150px;
 	width: 75px;
-	margin-top: 22px;
+	margin-top: 24px;
 	}
 }
 
@@ -159,13 +157,13 @@ p {
 }
 
 
-/* main */
+/* MAIN */
 
 .main-container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 95%;
-	margin: auto;
+	margin: 10px auto;
 }
 
 .image-block {
@@ -175,6 +173,12 @@ p {
 	border-radius: 12px;
 }
 
+@media screen and (min-width: 450px) {
+		.main-container {
+		margin-top: 25px;		
+	}
+}
+
 @media screen and (min-width: 600px) {
 	.image-block {
 		width: 46%;
@@ -182,6 +186,7 @@ p {
 	}
 }
 
+/* TODO: space 3 items out evenly without too much space to the right side */
 @media screen and (min-width: 900px) {
 	.image-block {
 		width: 29%;		
@@ -200,7 +205,9 @@ p {
 
 }
 
-/* footer */
+
+
+/* FOOTER */
 
 footer {
 	background-color: #fff;
