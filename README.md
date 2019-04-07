@@ -1,3 +1,3 @@
 # portfolio-website
 
-creating a responsive website using flexbox. 
+create a responsive website using flexbox. 
